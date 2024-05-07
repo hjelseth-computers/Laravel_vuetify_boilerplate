@@ -4,19 +4,20 @@ import { Head } from '@inertiajs/vue3';
 </script>
 
 <template>
-    <Head title="Dashboard" />
 
-    <AuthenticatedLayout>
-        <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>
-        </template>
+    <v-app>
+        <AuthenticatedLayout>
+            <template #main>
+                <v-sheet class="d-flex align-center justify-center flex-wrap text-center mx-auto px-4" elevation="4"
+                    height="250" max-width="800" width="100%" rounded>
+                    <div>
+                        <h2 class="text-h4 font-weight-black text-orange">Relationship practice</h2>
+                    </div>
+                </v-sheet>
+            </template>
+        </AuthenticatedLayout>
 
-        <div class="py-12">
-            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                    <div class="p-6 text-gray-900">You're logged in!</div>
-                </div>
-            </div>
-        </div>
-    </AuthenticatedLayout>
+    </v-app>
+
+
 </template>
