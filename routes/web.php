@@ -68,4 +68,6 @@ Route::get('/manytomany', function () {
 Route::get('/polytomany', function () {
 });
 
+//test
+
 require __DIR__ . '/auth.php';
